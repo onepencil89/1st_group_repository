@@ -1,4 +1,4 @@
-# Tem_fa00-1st-NAME
+# fa07-1st-Cerberus
 - KPMG Future Academy 첫 번째 프로젝트 템플릿 레포지토리입니다.
 
 -------------------
