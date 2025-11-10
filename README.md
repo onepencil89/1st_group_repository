@@ -11,77 +11,63 @@
 
 
 
-## 2. 프로젝트 일정 (예시 Gantt 차트)
+## 2. 프로젝트 일정
 ![프로젝트 일정]
-| 작업 항목                  | 시작 날짜   | 종료 날짜   | 기간(일) |
-|---------------------------|------------|------------|---------|
-| 프로젝트 정의 및 계획 수립  | 2024-01-01 | 2024-01-01 | 1       |
-| 자료 조사 및 벤치마킹       | 2024-01-02 | 2024-01-02 | 1       |
-| 아이디어 도출 및 시나리오 작성 | 2024-01-03 | 2024-01-03 | 1       |
-| 요구사항 도출 및 WBS 작성   | 2024-01-04 | 2024-01-04 | 1       |
-| 최종 검토 및 프로젝트 발표   | 2024-01-05 | 2024-01-05 | 1       |
- 
-  --------------------------
+[프로젝트 일정.pdf](https://github.com/user-attachments/files/23448608/default.pdf)
 
-# 작업 분할 구조 (WBS)
-- 2차 프로젝트 수행을 위한 WBS 작성
 
-## 1. 단계별 작업 구성
-### 1. 기획
-1.1. 문제 정의  
-1.2. 데이터 요구사항 정의
 
-### 2. 데이터 수집 및 준비
-2.1. 데이터 소스 조사  
-2.2. 데이터 수집 및 저장  
-2.3. 데이터 전처리
+### 작업 분할 구조 (WBS)
+[케로베로스 WBS.pdf](https://github.com/user-attachments/files/23448451/WBS.pdf)
 
-### 3. 데이터 분석 및 모델링
-3.1. 데이터 탐색 및 시각화  
-3.2. 모델 선택 및 학습  
-3.3. 성능 평가  
+--------------------------
 
-### 4. 결과 도출 및 보고
+# 단계별 작업 구성
+## 1. 기획
+1.1. 프로젝트 주제 선정
+1.2. 주제 해결을 위한 방향 설정
+
+## 2. 유사 서비스 검색 및 기능 구현 가능성 탐색
+2.1. 상용서비스 탐색 및 서비스기능 향상 논의
+2.2. 데이터 수집 및 구현가능 서비스 탐색
+
+## 3. 기능 구현작업 및 점검
+3.1. 사진 embedding 작업 및 위치 데이터 입력 
+3.2. 유사도 평가 및 유사도 오름차순 별 정렬
+3.3. 프롬프트 엔지니어링을 통한 AI챗봇 기능 구현
+3.4  작가 정보 노출 및 거래페이지 연결
+
+## 4. 결과 도출 및 발표
 4.1. 결과 요약  
 4.2. 보고서 작성  
 4.3. 최종 발표
 
   ------------------------------
 
-# 요구사항 정의서
-
-## 1. 기능 요구사항
-- [ ] 데이터 수집 기능: [수집 대상 및 방식]
-- [ ] 데이터 전처리 기능: [결측치 처리, 이상치 제거 등]
-- [ ] 분석 기능: [사용할 알고리즘 또는 분석 기법]
-- [ ] 시각화 기능: [대시보드, 차트, 그래프]
-
-## 2. 비기능 요구사항
-- [ ] 시스템 안정성: 데이터 처리 시 오류 발생 최소화
-- [ ] 성능: 데이터 처리 및 분석 시간 최소화
-- [ ] 확장성: 새로운 데이터 추가 및 확장 가능
-
-----------------------------
-
 # 프로젝트 설계서
 
 ## 1. 시스템 아키텍처
-- **구성 요소**:
-  - 데이터 수집 모듈
-  - 데이터 전처리 모듈
-  - 데이터 분석 및 시각화 모듈
+![아키텍쳐](https://github.com/user-attachments/assets/710612c9-ff4a-4e90-8f2c-37d1aeef7b96)
+<svg aria-roledescription="flowchart-v2" role="graphics-document document" viewBox="0 0 997.9840087890625 734" style="max-width: 997.9840087890625px;" class="flowchart" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="mermaid-diagram-mermaid-ptaagl4"><style>#mermaid-diagram-mermaid-ptaagl4{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#ccc;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-diagram-mermaid-ptaagl4 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-diagram-mermaid-ptaagl4 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-diagram-mermaid-ptaagl4 .error-icon{fill:#a44141;}#mermaid-diagram-mermaid-ptaagl4 .error-text{fill:#ddd;stroke:#ddd;}#mermaid-diagram-mermaid-ptaagl4 .edge-thickness-normal{stroke-width:1px;}#mermaid-diagram-mermaid-ptaagl4 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-diagram-mermaid-ptaagl4 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-diagram-mermaid-ptaagl4 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-diagram-mermaid-ptaagl4 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-diagram-mermaid-ptaagl4 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-diagram-mermaid-ptaagl4 .marker{fill:lightgrey;stroke:lightgrey;}#mermaid-diagram-mermaid-ptaagl4 .marker.cross{stroke:lightgrey;}#mermaid-diagram-mermaid-ptaagl4 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-diagram-mermaid-ptaagl4 p{margin:0;}#mermaid-diagram-mermaid-ptaagl4 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#ccc;}#mermaid-diagram-mermaid-ptaagl4 .cluster-label text{fill:#F9FFFE;}#mermaid-diagram-mermaid-ptaagl4 .cluster-label span{color:#F9FFFE;}#mermaid-diagram-mermaid-ptaagl4 .cluster-label span p{background-color:transparent;}#mermaid-diagram-mermaid-ptaagl4 .label text,#mermaid-diagram-mermaid-ptaagl4 span{fill:#ccc;color:#ccc;}#mermaid-diagram-mermaid-ptaagl4 .node rect,#mermaid-diagram-mermaid-ptaagl4 .node circle,#mermaid-diagram-mermaid-ptaagl4 .node ellipse,#mermaid-diagram-mermaid-ptaagl4 .node polygon,#mermaid-diagram-mermaid-ptaagl4 .node path{fill:#1f2020;stroke:#ccc;stroke-width:1px;}#mermaid-diagram-mermaid-ptaagl4 .rough-node .label text,#mermaid-diagram-mermaid-ptaagl4 .node .label text,#mermaid-diagram-mermaid-ptaagl4 .image-shape .label,#mermaid-diagram-mermaid-ptaagl4 .icon-shape .label{text-anchor:middle;}#mermaid-diagram-mermaid-ptaagl4 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-diagram-mermaid-ptaagl4 .rough-node .label,#mermaid-diagram-mermaid-ptaagl4 .node .label,#mermaid-diagram-mermaid-ptaagl4 .image-shape .label,#mermaid-diagram-mermaid-ptaagl4 .icon-shape .label{text-align:center;}#mermaid-diagram-mermaid-ptaagl4 .node.clickable{cursor:pointer;}#mermaid-diagram-mermaid-ptaagl4 .root .anchor path{fill:lightgrey!important;stroke-width:0;stroke:lightgrey;}#mermaid-diagram-mermaid-ptaagl4 .arrowheadPath{fill:lightgrey;}#mermaid-diagram-mermaid-ptaagl4 .edgePath .path{stroke:lightgrey;stroke-width:2.0px;}#mermaid-diagram-mermaid-ptaagl4 .flowchart-link{stroke:lightgrey;fill:none;}#mermaid-diagram-mermaid-ptaagl4 .edgeLabel{background-color:hsl(0, 0%, 34.4117647059%);text-align:center;}#mermaid-diagram-mermaid-ptaagl4 .edgeLabel p{background-color:hsl(0, 0%, 34.4117647059%);}#mermaid-diagram-mermaid-ptaagl4 .edgeLabel rect{opacity:0.5;background-color:hsl(0, 0%, 34.4117647059%);fill:hsl(0, 0%, 34.4117647059%);}#mermaid-diagram-mermaid-ptaagl4 .labelBkg{background-color:rgba(87.75, 87.75, 87.75, 0.5);}#mermaid-diagram-mermaid-ptaagl4 .cluster rect{fill:hsl(180, 1.5873015873%, 28.3529411765%);stroke:rgba(255, 255, 255, 0.25);stroke-width:1px;}#mermaid-diagram-mermaid-ptaagl4 .cluster text{fill:#F9FFFE;}#mermaid-diagram-mermaid-ptaagl4 .cluster span{color:#F9FFFE;}#mermaid-diagram-mermaid-ptaagl4 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(20, 1.5873015873%, 12.3529411765%);border:1px solid rgba(255, 255, 255, 0.25);border-radius:2px;pointer-events:none;z-index:100;}#mermaid-diagram-mermaid-ptaagl4 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#ccc;}#mermaid-diagram-mermaid-ptaagl4 rect.text{fill:none;stroke-width:0;}#mermaid-diagram-mermaid-ptaagl4 .icon-shape,#mermaid-diagram-mermaid-ptaagl4 .image-shape{background-color:hsl(0, 0%, 34.4117647059%);text-align:center;}#mermaid-diagram-mermaid-ptaagl4 .icon-shape p,#mermaid-diagram-mermaid-ptaagl4 .image-shape p{background-color:hsl(0, 0%, 34.4117647059%);padding:2px;}#mermaid-diagram-mermaid-ptaagl4 .icon-shape rect,#mermaid-diagram-mermaid-ptaagl4 .image-shape rect{opacity:0.5;background-color:hsl(0, 0%, 34.4117647059%);fill:hsl(0, 0%, 34.4117647059%);}#mermaid-diagram-mermaid-ptaagl4 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><marker orient="auto" markerHeight="8" markerWidth="8" markerUnits="userSpaceOnUse" refY="5" refX="5" viewBox="0 0 10 10" class="marker flowchart-v2" id="mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerHeight="8" markerWidth="8" markerUnits="userSpaceOnUse" refY="5" refX="4.5" viewBox="0 0 10 10" class="marker flowchart-v2" id="mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="11" viewBox="0 0 10 10" class="marker flowchart-v2" id="mermaid-diagram-mermaid-ptaagl4_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="-1" viewBox="0 0 10 10" class="marker flowchart-v2" id="mermaid-diagram-mermaid-ptaagl4_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="12" viewBox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-diagram-mermaid-ptaagl4_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="-1" viewBox="0 0 11 11" class="marker cross flowchart-v2" id="mermaid-diagram-mermaid-ptaagl4_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_A_B_0" d="M597.313,86L597.313,90.167C597.313,94.333,597.313,102.667,597.313,110.333C597.313,118,597.313,125,597.313,128.5L597.313,132"></path><path marker-end="url(#mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_C_0" d="M698.922,201.386L723.064,207.655C747.206,213.924,795.49,226.462,819.632,236.231C843.773,246,843.773,253,843.773,256.5L843.773,260"></path><path marker-end="url(#mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_D_0" d="M495.703,201.927L472.387,208.106C449.07,214.284,402.438,226.642,379.121,236.321C355.805,246,355.805,253,355.805,256.5L355.805,260"></path><path marker-end="url(#mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_E_0" d="M597.313,214L597.313,218.167C597.313,222.333,597.313,230.667,597.313,238.333C597.313,246,597.313,253,597.313,256.5L597.313,260"></path><path marker-end="url(#mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_F_0" d="M495.703,188.176L430.382,196.647C365.06,205.118,234.417,222.059,169.095,234.029C103.773,246,103.773,253,103.773,256.5L103.773,260"></path><path marker-end="url(#mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_F_G_0" d="M103.773,342L103.773,346.167C103.773,350.333,103.773,358.667,103.773,366.333C103.773,374,103.773,381,103.773,384.5L103.773,388"></path><path marker-end="url(#mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_D_H_0" d="M355.805,342L355.805,346.167C355.805,350.333,355.805,358.667,355.805,366.333C355.805,374,355.805,381,355.805,384.5L355.805,388"></path><path marker-end="url(#mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_H_I_0" d="M355.805,470L355.805,474.167C355.805,478.333,355.805,486.667,355.805,494.333C355.805,502,355.805,509,355.805,512.5L355.805,516"></path><path marker-end="url(#mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_I_J_0" d="M355.805,598L355.805,602.167C355.805,606.333,355.805,614.667,396.514,627.05C437.223,639.433,518.641,655.866,559.35,664.083L600.06,672.299"></path><path marker-end="url(#mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_J_B_0" d="M741.809,673.091L783.171,664.742C824.534,656.394,907.259,639.697,948.622,620.682C989.984,601.667,989.984,580.333,989.984,559C989.984,537.667,989.984,516.333,989.984,495C989.984,473.667,989.984,452.333,989.984,431C989.984,409.667,989.984,388.333,989.984,367C989.984,345.667,989.984,324.333,989.984,303C989.984,281.667,989.984,260.333,942.132,241.867C894.28,223.401,798.575,207.803,750.722,200.004L702.87,192.204"></path><path marker-end="url(#mermaid-diagram-mermaid-ptaagl4_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_C_K_0" d="M843.773,342L843.773,346.167C843.773,350.333,843.773,358.667,843.773,366.333C843.773,374,843.773,381,843.773,384.5L843.773,388"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div class="labelBkg" xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div class="labelBkg" xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div class="labelBkg" xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div class="labelBkg" xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div class="labelBkg" xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div class="labelBkg" xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div class="labelBkg" xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div class="labelBkg" xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div class="labelBkg" xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div class="labelBkg" xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div class="labelBkg" xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g transform="translate(597.3125, 47)" id="flowchart-A-0" class="node default"><rect height="78" width="147.765625" y="-39" x="-73.8828125" style="" class="basic label-container"></rect><g transform="translate(-43.8828125, -24)" style="" class="label"><rect></rect><foreignObject height="48" width="87.765625"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>사용자<br>(러너 / 작가)</p></span></div></foreignObject></g></g><g transform="translate(597.3125, 175)" id="flowchart-B-1" class="node default"><rect height="78" width="203.21875" y="-39" x="-101.609375" style="" class="basic label-container"></rect><g transform="translate(-71.609375, -24)" style="" class="label"><rect></rect><foreignObject height="48" width="143.21875"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Streamlit 프론트엔드<br>(Web App)</p></span></div></foreignObject></g></g><g transform="translate(843.7734375, 303)" id="flowchart-C-3" class="node default"><rect height="78" width="222.421875" y="-39" x="-111.2109375" style="" class="basic label-container"></rect><g transform="translate(-81.2109375, -24)" style="" class="label"><rect></rect><foreignObject height="48" width="162.421875"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Streamlit Session State<br>(임시 DB)</p></span></div></foreignObject></g></g><g transform="translate(355.8046875, 303)" id="flowchart-D-5" class="node default"><rect height="78" width="212.515625" y="-39" x="-106.2578125" style="" class="basic label-container"></rect><g transform="translate(-76.2578125, -24)" style="" class="label"><rect></rect><foreignObject height="48" width="152.515625"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>CLIP 모델<br>(@st.cache_resource)</p></span></div></foreignObject></g></g><g transform="translate(597.3125, 303)" id="flowchart-E-7" class="node default"><rect height="78" width="170.5" y="-39" x="-85.25" style="" class="basic label-container"></rect><g transform="translate(-55.25, -24)" style="" class="label"><rect></rect><foreignObject height="48" width="110.5"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>OpenAI GPT-3.5<br>(챗봇)</p></span></div></foreignObject></g></g><g transform="translate(103.7734375, 303)" id="flowchart-F-9" class="node default"><rect height="78" width="191.546875" y="-39" x="-95.7734375" style="" class="basic label-container"></rect><g transform="translate(-65.7734375, -24)" style="" class="label"><rect></rect><foreignObject height="48" width="131.546875"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Folium + st_folium<br>(실시간 지도)</p></span></div></foreignObject></g></g><g transform="translate(103.7734375, 431)" id="flowchart-G-11" class="node default"><rect height="78" width="183.34375" y="-39" x="-91.671875" style="" class="basic label-container"></rect><g transform="translate(-61.671875, -24)" style="" class="label"><rect></rect><foreignObject height="48" width="123.34375"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>GPX 파일<br>(실측 코스 데이터)</p></span></div></foreignObject></g></g><g transform="translate(355.8046875, 431)" id="flowchart-H-13" class="node default"><rect height="78" width="159.625" y="-39" x="-79.8125" style="" class="basic label-container"></rect><g transform="translate(-49.8125, -24)" style="" class="label"><rect></rect><foreignObject height="48" width="99.625"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>임베딩 저장<br>(512차원 벡터)</p></span></div></foreignObject></g></g><g transform="translate(355.8046875, 559)" id="flowchart-I-15" class="node default"><rect height="78" width="186.40625" y="-39" x="-93.203125" style="" class="basic label-container"></rect><g transform="translate(-63.203125, -24)" style="" class="label"><rect></rect><foreignObject height="48" width="126.40625"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>코사인 유사도 비교<br>(sklearn)</p></span></div></foreignObject></g></g><g transform="translate(672.89453125, 687)" id="flowchart-J-17" class="node default"><rect height="78" width="137.828125" y="-39" x="-68.9140625" style="" class="basic label-container"></rect><g transform="translate(-38.9140625, -24)" style="" class="label"><rect></rect><foreignObject height="48" width="77.828125"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>결과 필터링<br>(70%↑)</p></span></div></foreignObject></g></g><g transform="translate(843.7734375, 431)" id="flowchart-K-21" class="node default"><rect height="78" width="183.015625" y="-39" x="-91.5078125" style="" class="basic label-container"></rect><g transform="translate(-61.5078125, -24)" style="" class="label"><rect></rect><foreignObject height="48" width="123.015625"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>SQLite / Firebase<br>(향후 확장)</p></span></div></foreignObject></g></g></g></g></g></svg>
 
-## 2. 데이터 설계
-- **데이터 흐름**: 원천 데이터 → 전처리 → 분석 → 결과
-- **주요 데이터 속성**:
-  - 속성 이름: [예: user_id, timestamp, value]
-  - 데이터 유형: [정형, 반정형, 비정형]
+
+## 2. 설계 흐름
+작가 모드 : 대회 선택 -> 지도 위치 지정 -> 사진 업로드 ->EXIF 시간 데이터 추출 -> CLIP 임베딩 생성 - > 저장
+이용자 모드 : 
+- 대회 선택 -> 사진 업로드 -> 임베딩 생성 -> 코사인 유사도 비교 -> 유사도 70%이상 사진 필터 -> 사진 정렬 -> 상세보기 -> 구매창 활성화
+- AI 챗봇
 
 ## 3. 기술 스택
-- **데이터 수집**: Python, Selenium, API 활용
-- **분석**: Pandas, NumPy, Scikit-learn
-- **시각화**: Matplotlib, Seaborn, Plotly
+- 프론트 엔드 : streamlit(st_folium)
+- 지도 : foliium
+- GPX파싱 : gpxpy
+- AI이미지 검색 : HuggingFace Clip
+- 유사도 계산 : scikit-learn
+- 챗봇 : open AI GPT 3.5
+- 데이터 저장 : SQLite
 
-## 4. 예상 문제 및 해결 방안
-- **문제**: 데이터 불균형  
-  **해결 방안**: SMOTE 기법 활용
+  ------------------------------
+# 추가 논의 사항
+- DB 도입
+- OCR을 통한 번호 확인
+- 결제 시스템 도입
