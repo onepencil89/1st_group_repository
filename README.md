@@ -8,13 +8,14 @@
   
 
 ## 2. 프로젝트 일정
-![프로젝트 일정]
-[프로젝트 일정.pdf](https://github.com/user-attachments/files/23448608/default.pdf)
+<img width="757" height="317" alt="image" src="https://github.com/user-attachments/assets/5b1b9b63-b8a6-4842-93e8-54aaca8cce41" />
+
+
 
 
 
 ### 작업 분할 구조 (WBS)
-[케로베로스 WBS.pdf](https://github.com/user-attachments/files/23448451/WBS.pdf)
+<img width="813" height="454" alt="image" src="https://github.com/user-attachments/assets/2de54f16-2acf-4aea-bfd4-d73290a02427" />
 
 --------------------------
 
@@ -43,12 +44,8 @@
 # 프로젝트 설계서
 
 ## 1. 시스템 아키텍처
-계층            ,기술,                        역할
-프론트엔드,      Streamlit,                  "웹 UI, 실시간 반응"
-백엔드 로직,      Python,                    "세션 관리, 유사도 계산"
-AI 엔진,          CLIP + GPT-3.5,            사진 검색 + 코칭
-지도 엔진,        Folium + GPX,              정밀 코스 시각화
-데이터 저장,      Session State → SQLite,    임시 → 영구 저장
+<img width="768" height="567" alt="image" src="https://github.com/user-attachments/assets/5838acd7-6ee9-43c4-891f-e8efef2864e8" />
+
 
 ## 2. 설계 흐름
 작가 모드 : 대회 선택 -> 지도 위치 지정 -> 사진 업로드 ->EXIF 시간 데이터 추출 -> CLIP 임베딩 생성 - > 저장
